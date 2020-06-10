@@ -7,7 +7,7 @@ class User():
 
     def describe_user(self):
         print(f"{self.first_name.title()} {self.Last_name.title()} ma "
-        f"{self.age} lat i pochodzi z {self.city.title()}")
+              f"{self.age} lat i pochodzi z {self.city.title()}")
 
     def greet_user(self):
         print(f"Witaj {self.first_name.title()} {self.Last_name.title()}")
