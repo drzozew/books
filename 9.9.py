@@ -23,12 +23,45 @@ class Car():
         self.odometer_reading += kilometers
 
 
+class Battery():
+
+    def __init__(self, battery_siez=75):
+
+        self.battery_siez = battery_siez
+
+    def describe_battery(self):
+
+        print(
+            f"Ten samochód ma akumulator o "
+            f"pojemności {self.battery_siez} kWh.")
+
+    def get_range(self):
+
+        if self.battery_siez == 75:
+            range = 260
+        elif self.battery_siez == 100:
+            range = 315
+
+        print(f"Zasieg tego samochodu wynosi około {range} km"
+              " po pełnym naładowaniu akumulatora")
+
+    def upgrade_battery(self):
+        if self.battery_siez != 100:
+            self.battery_siez = 100
+
+
 class ElectricCar(Car):
 
     def __init__(self, make, model, year):
 
         super().__init__(make, model, year)
+        self.battery = Battery()
 
 
 my_tesla = ElectricCar("tesla", "model s", 2019)
 print(my_tesla.get_descriptive_name())
+my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
+my_tesla.battery.upgrade_battery()
+my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
