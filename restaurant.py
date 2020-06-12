@@ -21,22 +21,3 @@ class Res():
 
     def set_served(self, update_persona):
         self.number_serverd = update_persona
-
-
-class IceCreamStand(Res):
-
-    def __init__(self, restaurant_name, cuisine_type):
-        super().__init__(restaurant_name, cuisine_type)
-        self.list_of_ices = []
-
-    def ice_cream(self, list_of_ices):
-        print("Ice list: ")
-        for ice in list_of_ices:
-            print(f"- {ice}")
-
-
-ices = ["włoskie", "calipso", "ciepłe"]
-
-x = IceCreamStand("Lodek", "Włoskie")
-x.describe_restaurant()
-x.ice_cream(ices)
