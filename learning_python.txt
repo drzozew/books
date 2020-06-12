@@ -1,0 +1,3 @@
+W Pythonie można używać list
+W Pythonie można używać klas
+W Pythonie można używać zmiennych
