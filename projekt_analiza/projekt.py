@@ -2,4 +2,6 @@ print("test")
 "qqqq"
 "sss"
 
-dwdwdwd
+"dwdwdwd"
+
+"sss"
