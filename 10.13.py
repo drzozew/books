@@ -59,7 +59,7 @@ def check_names():
     if name_check in user_list:
         pass
     else:
-        print("nie ma")
+        print("Nie ma Ciebie na naszej liscie")
 
 
 greet_user()
