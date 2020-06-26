@@ -32,4 +32,4 @@ persons_list = [p1, p2, p3]
 
 for persona in persons_list:
     print(f"{persona['fnam'].title()} {persona['lnam'].title()} pochodzi z "
-    f"{persona['city'].title()} i ma {persona['age']} lat")
+          f"{persona['city'].title()} i ma {persona['age']} lat")
